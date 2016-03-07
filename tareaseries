@@ -1,0 +1,13 @@
+#Series de tiempo sirve para entender el pasado y predecir el futuro ayudando a tomar decisiones con mayor informacion.
+#Estas decisiones puedes ser de tipo empresarial o gubernamental. Un elemento relevante de las series de tiempo es el 
+#manejo de la informacion que se puede realizar
+#EJEMPLOS
+#Tasa de desocupacion
+#Numero de productos vendidos de una empresa 
+#Informacion financieras que se utiliza para invertir
+#En la compra de aviones las aerolineas realzian analisis de series de tiempo para evaluar el numero de aviones por comprar.
+
+td<-c(3.4,4.8,3.3,5.6,3.2,2.9,1.9,2.8,6.0,4.3,2.2)
+bd<- data.frame(cbind(td))
+ts1<- as.ts(bd,start=c(2015), end=2017,frequency(4))
+plot(ts1)
